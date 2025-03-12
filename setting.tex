@@ -1,0 +1,42 @@
+% ====================
+% Packages
+% ====================
+
+% === Font & Typography Packages ===
+\usepackage[T1]{fontenc}          % Uses T1 font encoding for proper character rendering
+% \usepackage[sb]{libertine}        % Loads the Linux Libertine font with small capitals and bold small capitals
+% \usepackage[scale=0.9]{inconsolata} % Loads the Inconsolata monospaced font, scaled to 90% size
+
+% === Beamer Poster Setup ===
+\usepackage[orientation=landscape, size=a0]{beamerposter} % landscape or portrait
+% Configures a Beamer poster with custom dimensions (122 cm × 91 cm)
+% scale=1.2 increases text and content size by 20%
+
+% === Beamer Theme & Colors ===
+\usetheme{uu}                     % Applies the Utrecht University (UU) Beamer theme
+\usecolortheme{uu}                % Uses Utrecht University's color theme for consistency
+
+% === Graphics & Tables ===
+\usepackage{graphicx}             % Enables image inclusion and manipulation
+\usepackage{booktabs}             % Enhances table formatting with \toprule, \midrule, and \bottomrule for professional tables
+
+% === TikZ & PGFPLOTS for Diagrams and Plots ===
+\usepackage{tikz}                 % Enables the TikZ package for creating vector graphics and diagrams
+\usepackage{pgfplots}             % Allows for scientific plots and graphs in LaTeX
+\pgfplotsset{compat=1.14}         % Ensures compatibility with PGFPlots version 1.14 to avoid rendering issues
+
+% === Font Scaling ===
+\usepackage{anyfontsize}          % Allows the use of arbitrary font sizes beyond LaTeX defaults
+
+% ====================
+% Lengths
+% ====================
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.3\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
