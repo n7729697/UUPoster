@@ -14,27 +14,29 @@
 % ====================
 % Fonts
 % ====================
+% \newfontfamily\Raleway[Ligatures=TeX]{Raleway}
+% \newfontfamily\Lato[Ligatures=TeX]{Lato}
 
-\newfontfamily\Inconsolata[Ligatures=TeX]{Inconsolata}
 \newfontfamily\Open[Ligatures=TeX]{Open Sans}
+\newfontfamily\Noto[Ligatures=TeX]{Noto Sans}
 \usefonttheme{professionalfonts} % Ensures custom fonts are used
 
-\setsansfont{Open Sans}[
-  UprightFont = *-Regular,
-  ItalicFont  = *-Italic,
-  BoldFont    = *-Bold,
-  BoldItalicFont = *-BoldItalic
+\setsansfont{Noto Sans}[
+  UprightFont = *-Light,
+  ItalicFont  = *-LightItalic,
+  BoldFont    = *-Regular,
+  BoldItalicFont = *-Italic
 ]
-
 
 \setbeamerfont{headline}{family=\Open}
 \setbeamerfont{headline title}{size=\Huge,series=\bfseries}
 \setbeamerfont{headline author}{size=\Large}
 \setbeamerfont{headline institute}{size=\normalsize}
 \setbeamerfont{block title}{family=\Open,size=\large,series=\bfseries}
-\setbeamerfont{heading}{family=\Inconsolata,series=\bfseries}
+\setbeamerfont{heading}{family=\Noto,series=\bfseries}
 \setbeamerfont{caption}{size=\small}
 \setbeamerfont{footline}{family=\Open,size=\normalsize}
+% \setbeamerfont{block body}{family=\Lato, size=\normalsize}
 
 % ====================
 % Macros

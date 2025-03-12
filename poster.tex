@@ -6,7 +6,14 @@
 % which is a fork of https://github.com/anishathalye/gemini
 % also refer to https://github.com/k4rtik/uchicago-poster
 
-\documentclass[final, 25pt, margin=1in,innermargin=-4.5in,blockverticalspace=-0.25in]{beamer}
+\documentclass[final]{beamer}
+
+% === Beamer Poster Setup ===
+\usepackage[orientation=landscape, size=a0, scale=1.2]{beamerposter}
+% orientation could be landscape or portrait, scale=1.2 increases text and content size by 20%
+% Could Configures a Beamer poster with custom dimensions (122 cm × 91 cm) 
+% \usepackage[size=custom, width=122, height=91, scale=1.2]{beamerposter}
+
 \input{setting.tex}
 
 % ====================
@@ -23,7 +30,7 @@
 
 \footercontent{
   \href{https://github.com}{Github: https://github.com} \hfill
-ICRA 2025 \hfill
+ICRA 2025, Stockholm — XYZ-1234 \hfill
   \href{mailto:youremail@it.uu.se}{youremail@uu.se}}
 % (can be left out to remove footer)
 
@@ -42,7 +49,6 @@ ICRA 2025 \hfill
 % ====================
 
 \begin{document}
-
 
 
 \begin{frame}[t]
@@ -164,11 +170,6 @@ ICRA 2025 \hfill
     hendrerit quis. Maecenas sed porta est. Praesent mollis interdum lectus,
     sit amet sollicitudin risus tincidunt non.
 
-    Etiam sit amet tempus lorem, aliquet condimentum velit. Donec et nibh
-    consequat, sagittis ex eget, dictum orci. Etiam quis semper ante. Ut eu
-    mauris purus. Proin nec consectetur ligula. Mauris pretium molestie
-    ullamcorper. Integer nisi neque, aliquet et odio non, sagittis porta justo.
-
     \begin{itemize}
       \item \textbf{Sed consequat} id ante vel efficitur. Praesent congue massa
         sed est scelerisque, elementum mollis augue iaculis.
@@ -257,9 +258,9 @@ ICRA 2025 \hfill
   \end{block}
 
   \begin{block}{References}
-
+    \vskip 0pt
     \nocite{*}
-    \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+    \scriptsize{\bibliographystyle{plain}\bibliography{poster}}
 
   \end{block}
 
